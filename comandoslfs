@@ -41,5 +41,5 @@ tipo das partiçoes
 -> bios boot
 -> linux file system
 -> linux swap
-
-
+write - yes
+lsblk

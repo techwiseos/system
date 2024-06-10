@@ -43,3 +43,6 @@ tipo das partiçoes
 -> linux swap
 write - yes
 lsblk
+lsblk | grep sda2
+lsblk | grep sda3
+

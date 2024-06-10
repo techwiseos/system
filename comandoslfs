@@ -32,3 +32,5 @@ chmod +x colors.sh
 lsblk
 nano 2-creating-partition.sh
 chwon user:user 2-creating-partition.sh
+ln -s /sbin/cfdisk bin/cfdisk
+

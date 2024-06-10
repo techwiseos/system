@@ -33,4 +33,13 @@ lsblk
 nano 2-creating-partition.sh
 chwon user:user 2-creating-partition.sh
 ln -s /sbin/cfdisk bin/cfdisk
+gpt
+-> partiçao de boot: 2m
+-> pasta raiz onde fica o sistema operacional 78g
+-> partiçao swap 2g
+tipo das partiçoes
+-> bios boot
+-> linux file system
+-> linux swap
+
 

@@ -1,0 +1,34 @@
+sudo su (su)
+apt update 
+apt full-upgrade
+apt update
+nano /etc/apt/sources.list
+ls
+ping 8.8.8.8
+ip addr
+apt autoremove
+nano /etc/ssh//sshd_config
+sudo passwd root 
+date
+sudo hwclock -s
+ls -lah /bin/sh
+ln -sf /usr/bin/bash /bin/sh
+apt search programa
+apt install bison
+apt install gawk
+ls -lah /usr/bin/awk
+ls-lah /etc/alternative/awk
+apt search texinfo
+apt install texinfo
+./1-version-check.sh
+sudo modprobe tun
+sudo nano.
+sudo nano .bashrc
+sudo nano .profile
+cd 
+ls -a
+nano .bashrc
+chmod +x colors.sh
+lsblk
+nano 2-creating-partition.sh
+chwon user:user 2-creating-partition.sh

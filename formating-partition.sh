@@ -42,13 +42,13 @@ if [[ -n "$cmd_particao" ]]; then
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
     mkfs -v -t "$tipo" ${caminho_da_particao}
     elif [[ "$tipo" = "ext2" ]];
+    elif [[ "$tipo" = "fat32" ]];
+    echo -e "\n${green_light}mkfs. fat -v -F32 "$tipo" ${caminho_da_particao}${end}\n" 
+    mkfs -v -t "$tipo" ${caminho_da_particao}	
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
     mkfs -v -t "$tipo" ${caminho_da_particao}
     elif [[ "$tipo" = "ntfs" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}
-    elif [[ "$tipo" = "fat32" ]];
-    echo -e "\n${green_light}mkfs -v -F32 "$tipo" ${caminho_da_particao}${end}\n" 
     mkfs -v -t "$tipo" ${caminho_da_particao}
     elif [[ "$tipo" = "vfat" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
@@ -56,13 +56,11 @@ if [[ -n "$cmd_particao" ]]; then
     elif [[ "$tipo" = "swap" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
     mkfs -v -t "$tipo" ${caminho_da_particao}
-    
-    
-    
-    
-    
-         
 
+
+    
+    
+    
     fi
     
 

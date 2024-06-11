@@ -36,7 +36,7 @@ if [[ -n "$cmd_particao" ]]; then
     echo -e "Tipo invalido! Exemplo dos tipos: ${cyan}[ ext4 | ext2 | ntfs | fat32 | vfat | swap ]${end}$\n"
     exit 1				
   # Verificar se o tipo não esta vazio
-    elfif [[ -n "$tipo" ]]; then
+    elif [[ -n "$tipo" ]]; then
     #echo -e "Tem coisa ai\n"
     if [[ "$tipo" = "ext4" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 

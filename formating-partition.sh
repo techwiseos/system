@@ -41,7 +41,7 @@ if [[ -n "$cmd_particao" ]]; then
     if [[ "$tipo" = "ext4" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
     mkfs -v -t "$tipo" "$caminho_da_particao"
-    elif [[ "$tipo" = "ext2" ]]; then
+   
     elif [[ "$tipo" = "fat32" ]];
     echo -e "\n${green_light}mkfs.fat -v -F32 ${caminho_da_particao}${end}\n" 
     mkfs. fat -v -F32 "$caminho_da_particao"	

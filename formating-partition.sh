@@ -55,15 +55,12 @@ if [[ -n "$cmd_particao" ]]; then
     mkfs.vfat -v -t "$caminho_da_particao"
     elif [[ "$tipo" = "swap" ]];
     echo -e "\n${green_light}mkswap ${caminho_da_particao}${end}\n" 
-    mkfs -v $caminho_da_particao
+    mkswap $caminho_da_particao
+     
 
+     fi	    
+   fi
     
-    
-    
-    
-    fi
-    
-
 
 fi
 

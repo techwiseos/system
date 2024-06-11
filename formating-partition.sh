@@ -40,24 +40,24 @@ if [[ -n "$cmd_particao" ]]; then
     #echo -e "Tem coisa ai\n"
     if [[ "$tipo" = "ext4" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}
+    mkfs -v -t "$tipo" "$caminho_da_particao"
     elif [[ "$tipo" = "ext2" ]];
     elif [[ "$tipo" = "fat32" ]];
-    echo -e "\n${green_light}mkfs. fat -v -F32 "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}	
+    echo -e "\n${green_light}mkfs.fat -v -F32 ${caminho_da_particao}${end}\n" 
+    mkfs. fat -v -F32 "$caminho_da_particao"	
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}
+    mkfs -v -t "$tipo" "$caminho_da_particao"
     elif [[ "$tipo" = "ntfs" ]];
     echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}
+    mkfs -v -t "$tipo" "${caminho_da_particao}"
     elif [[ "$tipo" = "vfat" ]];
-    echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}
+    echo -e "\n${green_light}mkfs. vfat -v ${caminho_da_particao}${end}\n" 
+    mkfs.vfat -v -t "$caminho_da_particao"
     elif [[ "$tipo" = "swap" ]];
-    echo -e "\n${green_light}mkfs -v -t "$tipo" ${caminho_da_particao}${end}\n" 
-    mkfs -v -t "$tipo" ${caminho_da_particao}
+    echo -e "\n${green_light}mkswap ${caminho_da_particao}${end}\n" 
+    mkfs -v $caminho_da_particao
 
-
+    
     
     
     

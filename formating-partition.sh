@@ -61,6 +61,10 @@ if [[ -n "$cmd_particao" ]]; then
      fi	    
    fi
     
-
+    exit 1
+    
+else
+ echo -e "\n${red}Partição não existente${end}"\n
+ echo -e "\n${cyan}Se a partição não existir , por favor , crie as partiçoes com o script 2-creating-partition ${end}"\n 
 fi
 
